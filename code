@@ -1,0 +1,38 @@
+import random
+from time import sleep
+print ('====Challenge 45====')
+print('''Options:
+[ 1 ] Rock
+[ 2 ] Paper 
+[ 3 ] Scissor''')
+n1=int(input('Your option :'))
+
+print ('\033[31mJO') #The command \033[m is ussed to put collor
+sleep(1)
+print ('\033[33mKEN')
+sleep(1)
+print('\033[32mPO!!')
+sleep(1)
+
+choice=random.choice(['Rock','Paper','Scissor'])
+if n1 == 1 and choice == 'Rock':
+    print('Nobody won try again i choose Rock too!')
+if n1 == 1 and choice == 'Paper':
+    print('You lose i choose Paper... Try again.')
+if n1== 1 and choice == 'Scissor':
+    print('I choose Scissor you won Congratulation !!!')
+
+if n1 == 2 and choice == 'Rock':
+    print('I choose Rock you won Congratulation !!!')
+if n1 == 2 and choice == 'Paper':
+    print('Nobody won try again i choose Paper too!')
+if n1 == 2 and choice == 'Scissor':
+    print('You lose i choose Scissor...Try again.')
+
+if n1 == 3 and choice == 'Rock':
+    print ('You lose i choose Rock... Try again.')
+if n1 == 3 and choice == 'Paper':
+    print('I choose Paper you won Congratulations!!!')
+if n1 == 3 and choice == 'Scissor':
+    print('Nobody won i choose Scissor too!')
+exit()
